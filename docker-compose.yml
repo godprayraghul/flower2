@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: petalora
+      POSTGRES_USER: petalora
+      POSTGRES_PASSWORD: petalora
+    ports:
+      - "5432:5432"
+    volumes:
+      - petalora_pg:/var/lib/postgresql/data
+volumes:
+  petalora_pg:

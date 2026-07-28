@@ -1,0 +1,15 @@
+PETALORA QUICK START (WINDOWS)
+
+1. Extract this ZIP.
+2. Open the extracted folder that directly contains package.json.
+3. Double-click start-windows.bat
+
+OR in the VS Code terminal run:
+
+  Copy-Item .env.example .env.local
+  npm install
+  npm run dev
+
+Open: http://localhost:3000
+
+Do not use localhost:8080.
